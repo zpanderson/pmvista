@@ -1811,6 +1811,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="phone"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1831,6 +1832,7 @@ input, select, textarea {
 		input[type="text"]:invalid,
 		input[type="password"]:invalid,
 		input[type="email"]:invalid,
+		input[type="phone"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -1839,6 +1841,7 @@ input, select, textarea {
 		input[type="text"]:focus,
 		input[type="password"]:focus,
 		input[type="email"]:focus,
+		input[type="phone"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #49bf9d;
@@ -1870,6 +1873,7 @@ input, select, textarea {
 	input[type="text"],
 	input[type="password"],
 	input[type="email"],
+	input[type="phone"],
 	select {
 		height: 2.75em;
 	}
@@ -3218,4 +3222,14 @@ input, select, textarea {
 				padding-left: 0;
 			}
 
+	}
+
+/* Image Slider */
+	
+	.custom-animated-handle {
+		transition: transform 0.2s;
+	}
+
+	.slider-with-animated-handle:hover .custom-animated-handle {
+		transform: scale(1.2);
 	}
