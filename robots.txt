@@ -1,0 +1,3 @@
+Sitemap: https://pmvistallc.com/sitemap.xml
+User-agent: *
+Disallow:
