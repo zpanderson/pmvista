@@ -187,10 +187,13 @@
 			</script>
 
 			<script>
-				const imgComparisonSliders = document.querySelectorAll('.img-comparison-slider');
-				imgComparisonSliders.forEach((slider) => {
-					// Initialize img-comparison-slider as needed
-				});
+				function scrollToElement(elementId) {
+					var elementInstance = document.getElementById(elementId);
+					if (elementInstance) {
+						elementInstance.scrollIntoView({ behavior: 'smooth', block: 'start' });
+						history.pushState
+					}
+				}
 			</script>
 	</body>
 </html>
