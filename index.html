@@ -44,8 +44,8 @@
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
 								<img-comparison-slider class="slider-with-animated-handle" value="40">
-									<img slot="first" width="100%" src="images/fulls/before-1.jpg">
-									<img slot="second" width="100%" src="images/fulls/after-1.jpg">
+									<img slot="first" width="100%" src="images/static/before-1.jpg">
+									<img slot="second" width="100%" src="images/static/after-1.jpg">
 									<svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
 										<path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
 									</svg>
@@ -56,8 +56,8 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<img-comparison-slider class="slider-with-animated-handle" value="40">
-									<img slot="first" width="100%" src="images/fulls/under-before-1.jpg">
-									<img slot="second" width="100%" src="images/fulls/under-after-1.jpg">
+									<img slot="first" width="100%" src="images/static/under-before-1.jpg">
+									<img slot="second" width="100%" src="images/static/under-after-1.jpg">
 									<svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
 										<path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
 									</svg>
@@ -68,8 +68,8 @@
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
 								<img-comparison-slider class="slider-with-animated-handle" value="40">
-									<img slot="first" width="100%" src="images/fulls/fence-before-1.jpg">
-									<img slot="second" width="100%" src="images/fulls/fence-after-1.jpg">
+									<img slot="first" width="100%" src="images/static/fence-before-1.jpg">
+									<img slot="second" width="100%" src="images/static/fence-after-1.jpg">
 									<svg slot="handle" class="custom-animated-handle" xmlns="http://www.w3.org/2000/svg" width="100" viewBox="-8 -3 16 6">
 										<path stroke="#fff" d="M -5 -2 L -7 0 L -5 2 M -5 -2 L -5 2 M 5 -2 L 7 0 L 5 2 M 5 -2 L 5 2" stroke-width="1" fill="#fff" vector-effect="non-scaling-stroke"></path>
 									</svg>
@@ -89,14 +89,14 @@
 						<h2>Who We Are</h2>
 						<div class="row">
 							<article class="col-6 col-12-xsmall work-item">
-								<a class="image fit "><img src="images/fulls/Muzny-family.jpg" alt="" /></a>
+								<a class="image fit "><img src="images/static/Muzny-family.jpg" alt="" /></a>
 								<h3>Matt Muzny</h3>
-								<p>*short desc here*</p>
+								<!-- <p>*short desc here*</p> -->
 							</article>
 							<article class="col-6 col-12-xsmall work-item">
-								<a class="image fit "><img src="images/fulls/Pilat-family.jpg" alt="" /></a>
+								<a class="image fit "><img src="images/static/Pilat-family.jpg" alt="" /></a>
 								<h3>Brentyn (Buddy) Pilat</h3>
-								<p>*short desc here*</p>
+								<!-- <p>*short desc here*</p> -->
 							</article>
 						</div>
 					</section>
@@ -170,7 +170,6 @@
 			<script src="assets/galleria/plugins/flickr/galleria.flickr.js"></script>
 
 			<script>
-			
 				document.addEventListener('DOMContentLoaded', function() {
 					Galleria.loadTheme('assets/galleria/themes/twelve/galleria.twelve.js');
 					Galleria.run('#myGallery', {
@@ -188,13 +187,10 @@
 			</script>
 
 			<script>
-				function scrollToElement(elementId) {
-					var elementInstance = document.getElementById(elementId);
-					if (elementInstance) {
-						elementInstance.scrollIntoView({ behavior: 'smooth', block: 'start' });
-						history.pushState
-					}
-				}
+				const imgComparisonSliders = document.querySelectorAll('.img-comparison-slider');
+				imgComparisonSliders.forEach((slider) => {
+					// Initialize img-comparison-slider as needed
+				});
 			</script>
 	</body>
 </html>
